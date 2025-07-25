@@ -145,7 +145,9 @@
     font-size: 1.375rem;
     font-weight: 500;
 }
-
+.card-title span{
+    font-weight: 550;
+}
 .plant-name {
     padding-bottom: 10px;
 }
@@ -153,10 +155,14 @@
 .btn-style {
     color: white;
     background-color: #E95A08;
-    font-weight: 600;
-    border: none;
+    font-weight: 700;
+    border: 2px solid #E95A08;
     padding: 19px 80px;
     width: 100%;
+}
+.btn-style:hover{
+    background-color: rgba(255, 142, 3, 0.2);
+    color: black;
 }
 
 /* Flower & Plants Lover */
@@ -199,6 +205,23 @@
     top: 1950px;
     left: 770px;
 }
+.badge1{
+    width: 100%;
+    position: absolute;
+    animation: trusted_badge 2s infinite linear;
+}
+@keyframes trusted_badge{
+    0%{
+        transform: rotate(0deg);
+        
+    }
+    100%{
+        transform: rotate(360deg);
+        
+    }
+    
+}
+
 
 /* Latest Deals */
 .deals-container {
@@ -223,7 +246,7 @@
 }
 
 .flower-bg-1 {
-    background-image: url(../assets/deal-bloom.png);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/deal-bloom.png);
     width: 100%;
     height: 50%;
     border-radius: 10px;
@@ -233,13 +256,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
     font-size: 1.25rem;
-    filter: brightness(80%);
+    color: white;
+   
 }
 
 .flower-bg-2 {
-    background-image: url(../assets/deal-ana.png);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/deal-ana.png);
     width: 100%;
     height: 50%;
     border-radius: 10px;
@@ -251,11 +274,10 @@
     justify-content: center;
     color: white;
     font-size: 1.25rem;
-    filter: brightness(70%);
 }
 
 .flower-bg-3 {
-    background-image: url(../assets/zabo.png);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/zabo.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -267,7 +289,7 @@
     justify-content: center;
     color: white;
     font-size: 2.5rem;
-    filter: brightness(80%);
+    
 }
 
 .left-images {
@@ -322,6 +344,10 @@
 .colorful-container input {
     padding: 15px 540px 14px 20px;
 }
+.colorful-container input:focus{
+    outline: 0;
+    border: 1px solid #E95A08;
+}
 
 .colorful-container button {
     color: white;
@@ -329,7 +355,200 @@
     font-weight: 600;
     padding: 15px 50px;
     margin-left: -5px;
-    border: none;
+    border:none;
 }
 
 
+
+/* Footer Style*/
+
+footer {
+    margin-top: 50px;
+    justify-content: space-evenly;
+}
+
+
+.footer-description {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 15px;
+}
+
+.footer-items li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.footer-items li a {
+    text-decoration: none;
+    color: #6B7280;
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+
+
+@media screen and (max-width:576px) {
+
+    /* navigation bar */
+    .nav-bar {
+        margin: 10px;
+    }
+
+    .nav-item,
+    .home-nav {
+        visibility: hidden;
+        font-size: 0px;
+    }
+
+    .nav-items .cart-icon {
+        font-size: 13px;
+    }
+
+    /*banner section */
+    .banner_container {
+        flex-direction: column-reverse;
+    }
+
+    .banner_left {
+        width: 100%;
+        text-align: left;
+        padding: 20px;
+    }
+
+    .banner_left_title {
+        font-size: 2.0625rem;
+    }
+
+    .banner_right {
+        width: 100%;
+    }
+
+    .fresh-flower-dedcription {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    /* Our Plants */
+    .card_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+        margin-top: 10px;
+        padding: 0 20px;
+
+    }
+
+    .plant-description {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .btn-style {
+        padding: 19px;
+    }
+
+    /* flower store section */
+    #trusted-badge {
+        width: 0px;
+        margin-right: -500px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+    }
+
+    .flowers_container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .left-lover {
+        width: 101%;
+        padding: 0 20px;
+    }
+
+    .right-lover {
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    .flowers_right_title{
+        width: 100%;
+        font-size: 1.9rem;
+        margin: -10px;
+        margin-bottom: 10px;
+    }
+
+    .list-items li {
+        font-size: 1rem;
+    }
+
+    /* Lerest Deals */
+    .latest-deals {
+        padding: 0 20px;
+    }
+
+    .colorful-bunch {
+        height: 250px;
+        width: 100%;
+    }
+
+    .colorful-container {
+        text-align: center;
+    }
+
+    .colorful-container h2 {
+        font-size: 2rem;
+    }
+
+    .colorful-container input {
+        padding: 15px 20px 14px 20px;
+    }
+
+    .colorful-container button {
+        padding: 15px 20px 15px 20px;
+    }
+
+    /* Footer Section */
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 20px;
+
+        * {
+            margin: 0;
+        }
+
+        margin-top: 30px;
+    }
+
+    .collage-container {
+        flex-direction: column;
+    }
+
+    .left-images {
+        height: 100%;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    .right-images {
+        height: 50%;
+        width: 100%;
+        padding: 0;
+    }
+    .flower-bg-3{
+        font-size: 1.25rem;
+    }
+    .flower-bg-2{
+        border-radius: 0;
+    }
+}
