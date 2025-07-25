@@ -76,3 +76,31 @@
     color: rgb(107, 114, 128);
 }
 
+/* Always Fresh Flower */
+
+.fresh-flowers {
+    align-items: end;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.left-fresh-flowers {
+    width: 50%;
+    flex: 1;
+}
+
+.right-fresh-flower {
+    flex: 1;
+}
+
+.fresh-flower-dedcription {
+    font-size: 1.375rem;
+}
+
+.fresh-flower-title {
+    font-size: 4.0625rem;
+}
+
+.fresh-flower-images {
+    width: 100%;
+}
