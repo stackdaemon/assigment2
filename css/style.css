@@ -159,3 +159,43 @@
     width: 100%;
 }
 
+/* Flower & Plants Lover */
+
+.flowers_container {
+    gap: 100px;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.left-lover {
+    width: 50%;
+}
+
+.right-lover {
+    width: 50%;
+}
+
+.nature-love-images {
+    width: 100%;
+    position: relative;
+}
+
+.flowers_right_title {
+    width: 70%;
+    margin: -30px;
+    margin-bottom: 10px;
+}
+
+.list-items li {
+    padding: 10px 0;
+}
+
+
+
+#trusted-badge {
+    width: 220px;
+    margin-right: -500px;
+    position: absolute;
+    top: 1950px;
+    left: 770px;
+}
