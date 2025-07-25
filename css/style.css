@@ -300,3 +300,36 @@
     font-family: "Inter", sans-serif;
 }
 
+/* Join the colorful Bunch */
+
+.colorful-bunch {
+    background-image: url(../assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.colorful-container h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.colorful-container input {
+    padding: 15px 540px 14px 20px;
+}
+
+.colorful-container button {
+    color: white;
+    background-color: #E95A08;
+    font-weight: 600;
+    padding: 15px 50px;
+    margin-left: -5px;
+    border: none;
+}
+
+
